@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_lop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_img_lop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_lop"
+            android:layout_toStartOf="@+id/cuslis"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/color_tab_1"
+                android:text="Ten Lop"
+                android:id="@+id/tv_tenLop"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ma Lop"
+                android:id="@+id/tv_maLop"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/cuslis"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/tv_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_img_edit"/>
+            <ImageView
+                android:id="@+id/tv_delete"
+                android:layout_marginLeft="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_img_delete"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

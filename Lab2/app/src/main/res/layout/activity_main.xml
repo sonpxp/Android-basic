@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Bai123Activity">
+
+    <EditText
+        android:id="@+id/edtVar1"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số thứ 1" />
+
+    <EditText
+        android:id="@+id/edtVar2"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số thứ 2" />
+    <Button
+        android:onClick="tinhTong"
+        android:id="@+id/btnTong"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tính tổng (Bài 2)"/>
+    <Button
+        android:onClick="btnTinhAll"
+        android:id="@+id/btnTinh"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Phép tính (Bài 3)"/>
+    <TextView
+        android:id="@+id/tvKq"
+        android:hint="Kết qủa"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+public class LopAdapter extends RecyclerView.Adapter<LopAdapter.LopViewHolder>{
+    private List<Lop> mListLop;
+
+    public void setData(List<Lop> list){
+        this.mListLop = list;
+        notifyDataSetChanged();
+    }
+
+    @NonNull
+    @Override
+    public LopViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_lop, parent, false);
+        return new LopViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull LopViewHolder holder, int position) {
+        Lop lop = mListLop.get(position);
+        if (lop  == null){
+            return;
+        }
+        holder.tvTenLop.setText(lop.getTenLop());
+        holder.tvMaLop.setText(lop.getMaLop());
+    }
+
+    @Override
+    public int getItemCount() {
+        if (mListLop != null){
+            return mListLop.size();
+        }
+        return 0;
+    }
+
+    public  class LopViewHolder extends RecyclerView.ViewHolder{
+        private ImageView imgLop;
+        private TextView tvTenLop;
+        private TextView tvMaLop;
+
+        public LopViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            imgLop = itemView.findViewById(R.id.img_lop);
+            tvTenLop = itemView.findViewById(R.id.tv_tenLop);
+            tvMaLop = itemView.findViewById(R.id.tv_maLop);
+        }
+    }
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="16"
+        app:counterEnabled="true">
+        <EditText
+            android:id="@+id/edt_masv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ma sv"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_namesv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ten sv"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_emailsv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_phonesv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="sdt"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Thêm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnXem"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Xem"
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Sua"
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Xoa"
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

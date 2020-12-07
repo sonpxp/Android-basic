@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".CreateAccActivity">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:text="Dăng ký"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:hint="Moi nhap email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/ed_pass"
+        android:hint="Moi nhap pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/ed_pass2"
+        android:hint="Moi nhap lai pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dăng ký"
+        android:id="@+id/btnSigup"/>
+
+    <TextView
+        android:id="@+id/loginhere"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập tại đây"
+        android:textColor="#000000"/>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LessonTwoActivity">
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="GPTB 2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số A:"/>
+        <EditText
+            android:id="@+id/edSoA"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nhap Số A"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số B:"/>
+        <EditText
+            android:id="@+id/edSoB"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nhap Số B"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số C:"/>
+        <EditText
+            android:id="@+id/edSoC"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nhap Số C"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:onClick="onKetQua"
+            android:id="@+id/Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Kết Qủa"/>
+    </LinearLayout>
+
+</RelativeLayout>
